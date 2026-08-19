@@ -139,7 +139,28 @@ Calculated:
 Identified:
 
 - Earliest job posting event
-- Latest job posting event
+- Latest job posting event 
+
+## SQL Analysis
+
+The project includes analytical SQL queries covering:
+
+- KPI calculation
+- Data quality validation
+- City-wise job supply
+- Skill-wise job supply
+- Company-wise job posting
+- Skill threshold analysis
+- High-threshold job identification
+- City × Skill analysis
+- Ranking using window functions
+- Live job supply view
+
+SQL concepts used:
+
+`COUNT`, `COUNT DISTINCT`, `GROUP BY`, `HAVING`,
+`ORDER BY`, aggregate functions, filtering,
+window functions, `RANK()`, `PARTITION BY`, and `VIEW`.
 
 ---
 
