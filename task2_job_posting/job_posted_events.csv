@@ -1,0 +1,7 @@
+event_id,job_id,company_id,job_title,skill,skill_threshold,city,event_timestamp
+E001,J001,C001,"Data Analyst",SQL,60,Lucknow,"2026-08-19 10:15:00"
+E002,J002,C002,"Python Developer",Python,70,Delhi,"2026-08-19 10:30:00"
+E003,J003,C003,"Data Analyst",Excel,50,Noida,"2026-08-19 11:00:00"
+E004,J004,C001,"Backend Developer",Python,80,Bangalore,"2026-08-19 11:20:00"
+E005,J005,C004,"SQL Developer",SQL,75,Delhi,"2026-08-19 11:45:00"
+E006,J006,C005,"Frontend Developer",JavaScript,65,Noida,"2026-08-19 12:10:00"
