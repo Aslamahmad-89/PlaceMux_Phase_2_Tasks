@@ -194,7 +194,7 @@ The dashboard includes:
 
 ## 📁 Project Structure
 
-```text
+```text ``` 
 task2_job_posting/
 │
 ├── job_posted_event.md
@@ -203,3 +203,144 @@ task2_job_posting/
 ├── jobs_by_city.csv
 ├── jobs_by_skill.csv
 └── jobs_by_company.csv
+
+
+# Task 3: Search & Discovery
+
+## Objective
+
+Built a company-side funnel to analyse the journey from company signup to job posting, job views and applications received.
+
+The objective is to provide a clear, data-driven view of company activity and identify where drop-offs occur in the marketplace funnel.
+
+---
+
+## Company-Side Funnel
+
+The funnel tracks the following stages:
+
+Company Signup
+↓
+Job Posted
+↓
+Job Viewed
+↓
+Application Submitted
+
+### Funnel Metrics
+
+| Funnel Stage | Companies |
+|---|---:|
+| Companies Signed Up | 1000 |
+| Companies Posted Jobs | 700 |
+| Companies With Job Views | 608 |
+| Companies Receiving Applications | 448 |
+
+### Conversion Rates
+
+| Funnel Step | Conversion Rate |
+|---|---:|
+| Signup → Job Posted | 70.00% |
+| Job Posted → Job Viewed | 86.86% |
+| Job Viewed → Application | 73.68% |
+
+---
+
+## Event Tracking Plan
+
+The following marketplace events were used to measure the company-side funnel:
+
+| Event | Trigger | Actor | Key Properties |
+|---|---|---|---|
+| company_signup | Company completes registration | Company | company_id, city, timestamp |
+| job_posted | Company publishes a job | Company | company_id, job_id, category, city, timestamp |
+| job_viewed | Candidate views a job listing | Candidate | company_id, job_id, candidate_id, timestamp |
+| application_submitted | Candidate submits an application | Candidate | company_id, job_id, candidate_id, timestamp |
+
+---
+
+## Data Analysis
+
+The analysis included:
+
+- Event-level data validation
+- Missing-value checks
+- Duplicate checks
+- Event count analysis
+- Company funnel calculation
+- Funnel conversion-rate calculation
+- City-level analysis
+- Job-category analysis
+- Application analysis
+- Business-oriented interpretation of funnel drop-offs
+
+---
+
+## Dashboard
+
+A dashboard was created to provide a live view of the company-side funnel.
+
+The dashboard includes:
+
+- Company funnel overview
+- Funnel conversion rates
+- Jobs posted by category
+- Applications received by category
+- Company/job activity by city
+
+The dashboard allows marketplace performance to be reviewed from both funnel and segment perspectives.
+
+---
+
+## Key Findings
+
+- 1,000 companies signed up on the marketplace.
+- 700 companies progressed to posting jobs, resulting in a 70% signup-to-job-posting conversion rate.
+- 608 companies received job views after posting jobs.
+- 448 companies received applications.
+- The largest funnel drop-off occurs between company signup and job posting.
+- Category-level analysis helps identify job categories with higher posting and application activity.
+- City-level analysis provides visibility into geographic differences in marketplace activity.
+
+---
+
+## Business Recommendations
+
+- Investigate why 30% of signed-up companies do not post jobs.
+- Improve company onboarding and guide new companies towards creating their first job.
+- Monitor job visibility to ensure posted jobs receive sufficient candidate views.
+- Identify categories and cities with strong application activity and use them as growth opportunities.
+- Investigate categories or cities with relatively low applications for potential supply-demand gaps.
+- Track the funnel regularly to identify changes in company activation and candidate engagement.
+
+---
+
+## Files
+
+- `company_events.csv` - Event-level marketplace data
+- `company_events.md` - Company-side event tracking plan
+- `Company_Funnel_Analysis.ipynb` - Python-based analysis and validation
+- `Company_Funnel_Dashboard.xlsx` - Company funnel dashboard
+
+---
+
+## Tools Used
+
+- Python
+- Pandas
+- SQL
+- Google Sheets / Microsoft Excel
+- Jupyter Notebook
+- Git & GitHub
+
+---
+
+## Definition of Done
+
+- Company funnel view built and demoable
+- Funnel metrics calculated from event data
+- Conversion rates calculated
+- Data quality checks performed
+- City and category analysis included
+- Dashboard created for business interpretation
+- Company-side funnel insights and recommendations documented
